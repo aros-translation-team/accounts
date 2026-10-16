@@ -1,0 +1,400 @@
+## version $VER: Accounts.catalog 1.0 (16.10.2026)
+## language türkçe
+## codeset 12
+;
+MSG_TITLE
+Accounts
+; Accounts
+;
+MSG_DESCRIPTION
+Kullanýcý hesaplarýný ve gruplarýný yönet
+; Manage user accounts and groups
+;
+MSG_MODE_SECURITY
+Çok kullanýcýlý sistem (security.library)
+; Multi-user system (security.library)
+;
+MSG_MODE_SINGLE
+Tek kullanýcýlý sistem (að þifre veritabaný)
+; Single-user system (network password database)
+;
+MSG_NOT_ADMIN
+Diðer hesaplarý yalnýzca root deðiþtirebilir.
+; Only root can change other accounts.
+;
+MSG_COL_NAME
+\33bKullanýcý
+; \33bUser
+;
+MSG_COL_UID
+\33bUID
+; \33bUID
+;
+MSG_COL_GROUP
+\33bGrup
+; \33bGroup
+;
+MSG_COL_REALNAME
+\33bAd
+; \33bName
+;
+MSG_COL_HOME
+\33bEv
+; \33bHome
+;
+MSG_COL_STATUS
+\33bDurum
+; \33bStatus
+;
+MSG_STATUS_LOCKED
+Kilitli
+; Locked
+;
+MSG_STATUS_NOPASSWORD
+Þifre yok
+; No password
+;
+MSG_BUTTON_ADD
+_Ekle...
+; _Add...
+;
+MSG_BUTTON_EDIT
+_Düzenle...
+; _Edit...
+;
+MSG_BUTTON_PASSWORD
+Þif_re...
+; _Password...
+;
+MSG_BUTTON_LOCK
+_Kilitle
+; _Lock
+;
+MSG_BUTTON_UNLOCK
+Kilidi _aç
+; _Unlock
+;
+MSG_BUTTON_DELETE
+_Sil...
+; _Delete...
+;
+MSG_BUTTON_MYPASSWORD
+Þifre_mi deðiþtir...
+; Change _my password...
+;
+MSG_BUTTON_LOGIN
+root _olarak giriþ yap...
+; Log in as _root...
+;
+MSG_BUTTON_REFRESH
+_Yenile
+; Re_fresh
+;
+MSG_BUTTON_SAVE
+_Kaydet
+; _Save
+;
+MSG_BUTTON_CANCEL
+_Vazgeç
+; _Cancel
+;
+MSG_EDIT_TITLE_ADD
+Yeni Hesap
+; New Account
+;
+MSG_EDIT_TITLE_EDIT
+Hesabý Düzenle
+; Edit Account
+;
+MSG_LABEL_NAME
+Kullanýcý adý:
+; User name:
+;
+MSG_LABEL_REALNAME
+Tam ad:
+; Full name:
+;
+MSG_LABEL_UID
+Kullanýcý kimliði:
+; User ID:
+;
+MSG_LABEL_GROUP
+Grup:
+; Group:
+;
+MSG_LABEL_HOME
+Ev dizini:
+; Home directory:
+;
+MSG_LABEL_SHELL
+Kabuk:
+; Shell:
+;
+MSG_LABEL_PASSWORD
+Þifre:
+; Password:
+;
+MSG_LABEL_RETYPE
+Þifreyi yeniden yaz:
+; Retype password:
+;
+MSG_LABEL_OLDPASSWORD
+Geçerli þifre:
+; Current password:
+;
+MSG_LABEL_NEWPASSWORD
+Yeni þifre:
+; New password:
+;
+MSG_EDIT_PASSWORD_HINT
+Þifreyi korumak için boþ býrakýn.
+; Leave the password empty to keep it.
+;
+MSG_PASSWORD_TITLE
+Þifre Belirle
+; Set Password
+;
+MSG_MYPASSWORD_TITLE
+Þifrenizi Deðiþtir
+; Change Your Password
+;
+MSG_REQ_OK
+_Tamam
+; _OK
+;
+MSG_REQ_YESNO
+_Sil|_Vazgeç
+; _Delete|_Cancel
+;
+MSG_REQ_DELETE
+'%s' hesabý silinsin mi?\n\nDosyalarý kaldýrýlmaz.
+; Delete the account '%s'?\n\nIts files are not removed.
+;
+MSG_ERR_MISMATCH
+Þifreler eþleþmiyor.
+; The passwords do not match.
+;
+MSG_ERR_NAME
+Bir kullanýcý adý girin (boþluk, ':' veya '|' olmadan).
+; Please enter a user name (no spaces, ':' or '|').
+;
+MSG_ERR_UID
+1 ile 65535 arasýnda bir kullanýcý kimliði girin.
+; Please enter a user ID between 1 and 65535.
+;
+MSG_ERR_RENAME_PASSWORD
+Bu hesabýn þifresi kullanýcý adýna baðlýdýr:\nadýný deðiþtirmek için yeni bir þifre girin.
+; This account has a password, which depends on the user name:\nplease enter a new password to rename it.
+;
+MSG_ERR_PERM
+Bunu yapma izniniz yok veya süper kullanýcýnýn adý\nve numarasý deðiþtirilemez.
+; You are not allowed to do this, or the super user's name\nand number cannot be changed.
+;
+MSG_ERR_NOENT
+Böyle bir hesap yok.
+; There is no such account.
+;
+MSG_ERR_EXIST
+Kullanýcý adý veya kullanýcý kimliði zaten kullanýmda.
+; The user name or user ID is already used.
+;
+MSG_ERR_INVAL
+Bir alan geçersiz veya grup mevcut deðil.
+; A field is invalid, or the group does not exist.
+;
+MSG_ERR_IO
+Hesap veritabaný yazýlamadý. Hiçbir þey deðiþtirilmedi.
+; The account database could not be written. Nothing was changed.
+;
+MSG_ERR_NOSYS
+Deðiþtirilecek hesap veritabaný yok.
+; There is no account database to change.
+;
+MSG_ERR_OTHER
+Deðiþiklik baþarýsýz oldu (hata %ld).
+; The change failed (error %ld).
+;
+MSG_ERR_PAM
+Þifre deðiþtirilmedi: %s
+; The password was not changed: %s
+;
+MSG_DONE_PASSWORD
+Þifre deðiþtirildi.
+; The password has been changed.
+;
+MSG_ERR_NOMUI
+Accounts, muimaster.library gerektirir.
+; Accounts needs muimaster.library.
+;
+MSG_ERR_NOUSERGROUP
+Accounts, usergroup.library 4.12 gerektirir.
+; Accounts needs usergroup.library 4.12.
+;
+MSG_PAGE_USERS
+Kullanýcýlar
+; Users
+;
+MSG_PAGE_GROUPS
+Gruplar
+; Groups
+;
+MSG_COL_GROUPNAME
+\33bGrup
+; \33bGroup
+;
+MSG_COL_GID
+\33bGID
+; \33bGID
+;
+MSG_COL_MEMBERS
+\33bÜyeler
+; \33bMembers
+;
+MSG_COL_DESCRIPTION
+\33bAçýklama
+; \33bDescription
+;
+MSG_BUTTON_GADD
+E_kle...
+; A_dd...
+;
+MSG_BUTTON_GEDIT
+Düze_nle...
+; Ed_it...
+;
+MSG_BUTTON_GDELETE
+S_il...
+; Dele_te...
+;
+MSG_GROUP_TITLE_ADD
+Yeni Grup
+; New Group
+;
+MSG_GROUP_TITLE_EDIT
+Grubu Düzenle
+; Edit Group
+;
+MSG_LABEL_GROUPNAME
+Grup adý:
+; Group name:
+;
+MSG_LABEL_GID
+Grup kimliði:
+; Group ID:
+;
+MSG_LABEL_DESCRIPTION
+Açýklama:
+; Description:
+;
+MSG_LABEL_MEMBERS
+Üyeler
+; Members
+;
+MSG_GROUP_PRIMARY
+Birincil gruplarý üzerinden üyeler: %s
+; Members through their primary group: %s
+;
+MSG_REQ_DELETE_GROUP
+'%s' grubu silinsin mi?
+; Delete the group '%s'?
+;
+MSG_ERR_GROUPNAME
+Bir grup adý girin (boþluk, ':', ',' veya '|' olmadan).
+; Please enter a group name (no spaces, ':', ',' or '|').
+;
+MSG_ERR_GID
+1 ile 65535 arasýnda bir grup kimliði girin.
+; Please enter a group ID between 1 and 65535.
+;
+MSG_ERR_BUSY
+Bu grup bir kullanýcýnýn birincil grubudur:\nsilinemez veya yeniden numaralandýrýlamaz.
+; This group is the primary group of a user:\nit cannot be deleted or renumbered.
+;
+MSG_ERR_GROUP_PERM
+Bunu yapma izniniz yok veya süper kullanýcýnýn grubu\nyeniden adlandýrýlamaz veya numaralandýrýlamaz.
+; You are not allowed to do this, or the super user's group\ncannot be renamed or renumbered.
+;
+MSG_ERR_GROUP_NOENT
+Böyle bir grup yok veya bir üye mevcut deðil.
+; There is no such group, or a member does not exist.
+;
+MSG_ERR_GROUP_EXIST
+Grup adý veya grup kimliði zaten kullanýmda.
+; The group name or group ID is already used.
+;
+MSG_ERR_GROUP_IO
+Grup veritabaný yazýlamadý. Hiçbir þey deðiþtirilmedi.
+; The group database could not be written. Nothing was changed.
+;
+MSG_REQ_DEFAULTS
+Henüz hiç kullanýcý hesabý veya grubu tanýmlanmadý.\n\nStandart hesaplar (root, nobody, services ve\nguest) ile gruplar (admin, nobody, services, guests ve\nusers) oluþturulsun mu? root dýþýndaki tüm hesaplar kilitlidir.
+; No user accounts or groups are defined yet.\n\nCreate the standard accounts (root, nobody, services and\nguest) and groups (admin, nobody, services, guests and\nusers)? All accounts but root are locked.
+;
+MSG_REQ_DEFAULTS_BUTTONS
+_Oluþtur|Þ_imdi deðil
+; _Create|_Not now
+;
+MSG_BUTTON_REMOVEPW
+Þifreyi ka_ldýr...
+; _Remove password...
+;
+MSG_PASSWORD_FOR
+Hesap: %s
+; Account: %s
+;
+MSG_ERR_EMPTY_PASSWORD
+Yeni þifreyi iki kez girin.\nÞifreyi kaldýrmak için "Þifreyi kaldýr" seçeneðini kullanýn.
+; Please enter the new password twice.\nTo remove the password, use "Remove password".
+;
+MSG_REQ_REMOVE_PASSWORD
+'%s' hesabýnýn þifresi kaldýrýlsýn mý?\n\nArdýndan herkes þifresiz olarak bu hesapla giriþ yapabilir.\nKilitli bir hesabýn kilidi açýlýr.
+; Remove the password of '%s'?\n\nAnybody can then log in as it without one.\nA locked account is unlocked.
+;
+MSG_REQ_REMOVE_BUTTONS
+_Kaldýr|_Vazgeç
+; _Remove|_Cancel
+;
+MSG_DONE_REMOVED
+Þifre kaldýrýldý.
+; The password has been removed.
+;
+MSG_READONLY_MEDIA
+Hesap veritabaný salt okunur ortamda: deðiþtirilemez.
+; The account database is on read-only media: it cannot be changed.
+;
+MSG_MENU_ACCOUNT
+Hesap
+; Account
+;
+MSG_MENU_GROUP
+Grup
+; Group
+;
+MSG_MENU_EDIT
+Düzenle...
+; Edit...
+;
+MSG_MENU_PASSWORD
+Þifre belirle...
+; Set password...
+;
+MSG_MENU_LOCK
+Kilitle
+; Lock
+;
+MSG_MENU_UNLOCK
+Kilidi aç
+; Unlock
+;
+MSG_MENU_DELETE
+Sil...
+; Delete...
+;
+MSG_MENU_ADD_ACCOUNT
+Yeni hesap...
+; New account...
+;
+MSG_MENU_ADD_GROUP
+Yeni grup...
+; New group...
+;

@@ -1,0 +1,400 @@
+## version $VER: Accounts.catalog 1.0 (16.10.2026)
+## language euskara
+## codeset 0
+;
+MSG_TITLE
+Accounts
+; Accounts
+;
+MSG_DESCRIPTION
+Erabiltzaile-kontuak eta taldeak kudeatu
+; Manage user accounts and groups
+;
+MSG_MODE_SECURITY
+Erabiltzaile anitzeko sistema (security.library)
+; Multi-user system (security.library)
+;
+MSG_MODE_SINGLE
+Erabiltzaile bakarreko sistema (sareko gako datu-basea)
+; Single-user system (network password database)
+;
+MSG_NOT_ADMIN
+root-ek bakarrik alda ditzake beste kontuak.
+; Only root can change other accounts.
+;
+MSG_COL_NAME
+\33bErabiltzailea
+; \33bUser
+;
+MSG_COL_UID
+\33bUID
+; \33bUID
+;
+MSG_COL_GROUP
+\33bTaldea
+; \33bGroup
+;
+MSG_COL_REALNAME
+\33bIzena
+; \33bName
+;
+MSG_COL_HOME
+\33bEtxea
+; \33bHome
+;
+MSG_COL_STATUS
+\33bEgoera
+; \33bStatus
+;
+MSG_STATUS_LOCKED
+Blokeatuta
+; Locked
+;
+MSG_STATUS_NOPASSWORD
+Gakorik gabe
+; No password
+;
+MSG_BUTTON_ADD
+_Gehitu...
+; _Add...
+;
+MSG_BUTTON_EDIT
+_Editatu...
+; _Edit...
+;
+MSG_BUTTON_PASSWORD
+Ga_koa...
+; _Password...
+;
+MSG_BUTTON_LOCK
+_Blokeatu
+; _Lock
+;
+MSG_BUTTON_UNLOCK
+_Desblokeatu
+; _Unlock
+;
+MSG_BUTTON_DELETE
+Ezaba_tu...
+; _Delete...
+;
+MSG_BUTTON_MYPASSWORD
+Nire gakoa a_ldatu...
+; Change _my password...
+;
+MSG_BUTTON_LOGIN
+root g_isa saioa hasi...
+; Log in as _root...
+;
+MSG_BUTTON_REFRESH
+F_reskatu
+; Re_fresh
+;
+MSG_BUTTON_SAVE
+_Gorde
+; _Save
+;
+MSG_BUTTON_CANCEL
+_Deuseztu
+; _Cancel
+;
+MSG_EDIT_TITLE_ADD
+Kontu berria
+; New Account
+;
+MSG_EDIT_TITLE_EDIT
+Kontua editatu
+; Edit Account
+;
+MSG_LABEL_NAME
+Erabiltzaile-izena:
+; User name:
+;
+MSG_LABEL_REALNAME
+Izen osoa:
+; Full name:
+;
+MSG_LABEL_UID
+Erabiltzaile-IDa:
+; User ID:
+;
+MSG_LABEL_GROUP
+Taldea:
+; Group:
+;
+MSG_LABEL_HOME
+Etxeko direktorioa:
+; Home directory:
+;
+MSG_LABEL_SHELL
+Shell:
+; Shell:
+;
+MSG_LABEL_PASSWORD
+Gakoa:
+; Password:
+;
+MSG_LABEL_RETYPE
+Gakoa berriz idatzi:
+; Retype password:
+;
+MSG_LABEL_OLDPASSWORD
+Oraingo gakoa:
+; Current password:
+;
+MSG_LABEL_NEWPASSWORD
+Gako berria:
+; New password:
+;
+MSG_EDIT_PASSWORD_HINT
+Gakoa hutsik utzi mantentzeko.
+; Leave the password empty to keep it.
+;
+MSG_PASSWORD_TITLE
+Gakoa ezarri
+; Set Password
+;
+MSG_MYPASSWORD_TITLE
+Zure gakoa aldatu
+; Change Your Password
+;
+MSG_REQ_OK
+_Ados
+; _OK
+;
+MSG_REQ_YESNO
+_Ezabatu|_Deuseztu
+; _Delete|_Cancel
+;
+MSG_REQ_DELETE
+'%s' kontua ezabatu?\n\nBere fitxategiak ez dira kentzen.
+; Delete the account '%s'?\n\nIts files are not removed.
+;
+MSG_ERR_MISMATCH
+Gakoak ez datoz bat.
+; The passwords do not match.
+;
+MSG_ERR_NAME
+Sartu erabiltzaile-izen bat (zuriunerik gabe, ':' edo '|' gabe).
+; Please enter a user name (no spaces, ':' or '|').
+;
+MSG_ERR_UID
+Sartu 1 eta 65535 arteko erabiltzaile-ID bat.
+; Please enter a user ID between 1 and 65535.
+;
+MSG_ERR_RENAME_PASSWORD
+Kontu honek erabiltzaile-izenaren araberako gakoa du:\nsartu gako berri bat izena aldatzeko.
+; This account has a password, which depends on the user name:\nplease enter a new password to rename it.
+;
+MSG_ERR_PERM
+Ez duzu baimenik horretarako, edo supererabiltzailearen\nizena eta zenbakia ezin dira aldatu.
+; You are not allowed to do this, or the super user's name\nand number cannot be changed.
+;
+MSG_ERR_NOENT
+Kontu hori ez dago.
+; There is no such account.
+;
+MSG_ERR_EXIST
+Erabiltzaile-izena edo erabiltzaile-IDa jada erabilia dago.
+; The user name or user ID is already used.
+;
+MSG_ERR_INVAL
+Eremu bat baliogabea da, edo taldea ez dago.
+; A field is invalid, or the group does not exist.
+;
+MSG_ERR_IO
+Kontuen datu-basea ezin izan da idatzi. Ez da ezer aldatu.
+; The account database could not be written. Nothing was changed.
+;
+MSG_ERR_NOSYS
+Ez dago aldatzeko kontuen datu-baserik.
+; There is no account database to change.
+;
+MSG_ERR_OTHER
+Aldaketak huts egin du (%ld errorea).
+; The change failed (error %ld).
+;
+MSG_ERR_PAM
+Gakoa ez da aldatu: %s
+; The password was not changed: %s
+;
+MSG_DONE_PASSWORD
+Gakoa aldatu da.
+; The password has been changed.
+;
+MSG_ERR_NOMUI
+Accounts-ek muimaster.library behar du.
+; Accounts needs muimaster.library.
+;
+MSG_ERR_NOUSERGROUP
+Accounts-ek usergroup.library 4.12 behar du.
+; Accounts needs usergroup.library 4.12.
+;
+MSG_PAGE_USERS
+Erabiltzaileak
+; Users
+;
+MSG_PAGE_GROUPS
+Taldeak
+; Groups
+;
+MSG_COL_GROUPNAME
+\33bTaldea
+; \33bGroup
+;
+MSG_COL_GID
+\33bGID
+; \33bGID
+;
+MSG_COL_MEMBERS
+\33bKideak
+; \33bMembers
+;
+MSG_COL_DESCRIPTION
+\33bDeskribapena
+; \33bDescription
+;
+MSG_BUTTON_GADD
+G_ehitu...
+; A_dd...
+;
+MSG_BUTTON_GEDIT
+E_ditatu...
+; Ed_it...
+;
+MSG_BUTTON_GDELETE
+Ezab_atu...
+; Dele_te...
+;
+MSG_GROUP_TITLE_ADD
+Talde berria
+; New Group
+;
+MSG_GROUP_TITLE_EDIT
+Taldea editatu
+; Edit Group
+;
+MSG_LABEL_GROUPNAME
+Taldearen izena:
+; Group name:
+;
+MSG_LABEL_GID
+Taldearen IDa:
+; Group ID:
+;
+MSG_LABEL_DESCRIPTION
+Deskribapena:
+; Description:
+;
+MSG_LABEL_MEMBERS
+Kideak
+; Members
+;
+MSG_GROUP_PRIMARY
+Talde nagusiaren bidezko kideak: %s
+; Members through their primary group: %s
+;
+MSG_REQ_DELETE_GROUP
+'%s' taldea ezabatu?
+; Delete the group '%s'?
+;
+MSG_ERR_GROUPNAME
+Sartu talde-izen bat (zuriunerik gabe, ':', ',' edo '|' gabe).
+; Please enter a group name (no spaces, ':', ',' or '|').
+;
+MSG_ERR_GID
+Sartu 1 eta 65535 arteko talde-ID bat.
+; Please enter a group ID between 1 and 65535.
+;
+MSG_ERR_BUSY
+Talde hau erabiltzaile baten talde nagusia da:\nezin da ezabatu ez zenbakia aldatu.
+; This group is the primary group of a user:\nit cannot be deleted or renumbered.
+;
+MSG_ERR_GROUP_PERM
+Ez duzu baimenik horretarako, edo supererabiltzailearen\ntaldeari ezin zaio izena ez zenbakia aldatu.
+; You are not allowed to do this, or the super user's group\ncannot be renamed or renumbered.
+;
+MSG_ERR_GROUP_NOENT
+Talde hori ez dago, edo kide bat ez dago.
+; There is no such group, or a member does not exist.
+;
+MSG_ERR_GROUP_EXIST
+Taldearen izena edo IDa jada erabilia dago.
+; The group name or group ID is already used.
+;
+MSG_ERR_GROUP_IO
+Taldeen datu-basea ezin izan da idatzi. Ez da ezer aldatu.
+; The group database could not be written. Nothing was changed.
+;
+MSG_REQ_DEFAULTS
+Oraindik ez dago erabiltzaile-konturik edo talderik.\n\nKontu estandarrak (root, nobody, services eta\nguest) eta taldeak (admin, nobody, services, guests eta\nusers) sortu? root izan ezik kontu guztiak blokeatuta daude.
+; No user accounts or groups are defined yet.\n\nCreate the standard accounts (root, nobody, services and\nguest) and groups (admin, nobody, services, guests and\nusers)? All accounts but root are locked.
+;
+MSG_REQ_DEFAULTS_BUTTONS
+_Sortu|_Orain ez
+; _Create|_Not now
+;
+MSG_BUTTON_REMOVEPW
+Gakoa ke_ndu...
+; _Remove password...
+;
+MSG_PASSWORD_FOR
+Kontua: %s
+; Account: %s
+;
+MSG_ERR_EMPTY_PASSWORD
+Sartu gako berria bi aldiz.\nGakoa kentzeko, erabili "Gakoa kendu".
+; Please enter the new password twice.\nTo remove the password, use "Remove password".
+;
+MSG_REQ_REMOVE_PASSWORD
+'%s'-(r)en gakoa kendu?\n\nEdonork hasi ahalko du saioa harekin gakorik gabe.\nBlokeatutako kontua desblokeatzen da.
+; Remove the password of '%s'?\n\nAnybody can then log in as it without one.\nA locked account is unlocked.
+;
+MSG_REQ_REMOVE_BUTTONS
+_Kendu|_Deuseztu
+; _Remove|_Cancel
+;
+MSG_DONE_REMOVED
+Gakoa kendu da.
+; The password has been removed.
+;
+MSG_READONLY_MEDIA
+Kontuen datu-basea irakurtzeko soilik den euskarrian dago: ezin da aldatu.
+; The account database is on read-only media: it cannot be changed.
+;
+MSG_MENU_ACCOUNT
+Kontua
+; Account
+;
+MSG_MENU_GROUP
+Taldea
+; Group
+;
+MSG_MENU_EDIT
+Editatu...
+; Edit...
+;
+MSG_MENU_PASSWORD
+Gakoa ezarri...
+; Set password...
+;
+MSG_MENU_LOCK
+Blokeatu
+; Lock
+;
+MSG_MENU_UNLOCK
+Desblokeatu
+; Unlock
+;
+MSG_MENU_DELETE
+Ezabatu...
+; Delete...
+;
+MSG_MENU_ADD_ACCOUNT
+Kontu berria...
+; New account...
+;
+MSG_MENU_ADD_GROUP
+Talde berria...
+; New group...
+;

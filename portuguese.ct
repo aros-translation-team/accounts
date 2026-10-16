@@ -1,0 +1,400 @@
+## version $VER: Accounts.catalog 1.0 (16.10.2026)
+## language português
+## codeset 0
+;
+MSG_TITLE
+Accounts
+; Accounts
+;
+MSG_DESCRIPTION
+Gerir contas de utilizador e grupos
+; Manage user accounts and groups
+;
+MSG_MODE_SECURITY
+Sistema multi-utilizador (security.library)
+; Multi-user system (security.library)
+;
+MSG_MODE_SINGLE
+Sistema de utilizador único (base de palavras-passe de rede)
+; Single-user system (network password database)
+;
+MSG_NOT_ADMIN
+Só o root pode alterar outras contas.
+; Only root can change other accounts.
+;
+MSG_COL_NAME
+\33bUtilizador
+; \33bUser
+;
+MSG_COL_UID
+\33bUID
+; \33bUID
+;
+MSG_COL_GROUP
+\33bGrupo
+; \33bGroup
+;
+MSG_COL_REALNAME
+\33bNome
+; \33bName
+;
+MSG_COL_HOME
+\33bPasta
+; \33bHome
+;
+MSG_COL_STATUS
+\33bEstado
+; \33bStatus
+;
+MSG_STATUS_LOCKED
+Bloqueada
+; Locked
+;
+MSG_STATUS_NOPASSWORD
+Sem palavra-passe
+; No password
+;
+MSG_BUTTON_ADD
+_Adicionar...
+; _Add...
+;
+MSG_BUTTON_EDIT
+_Editar...
+; _Edit...
+;
+MSG_BUTTON_PASSWORD
+_Palavra-passe...
+; _Password...
+;
+MSG_BUTTON_LOCK
+_Bloquear
+; _Lock
+;
+MSG_BUTTON_UNLOCK
+_Desbloquear
+; _Unlock
+;
+MSG_BUTTON_DELETE
+Apa_gar...
+; _Delete...
+;
+MSG_BUTTON_MYPASSWORD
+Alterar a _minha palavra-passe...
+; Change _my password...
+;
+MSG_BUTTON_LOGIN
+Entrar como _root...
+; Log in as _root...
+;
+MSG_BUTTON_REFRESH
+A_ctualizar
+; Re_fresh
+;
+MSG_BUTTON_SAVE
+_Gravar
+; _Save
+;
+MSG_BUTTON_CANCEL
+_Cancelar
+; _Cancel
+;
+MSG_EDIT_TITLE_ADD
+Nova conta
+; New Account
+;
+MSG_EDIT_TITLE_EDIT
+Editar conta
+; Edit Account
+;
+MSG_LABEL_NAME
+Nome de utilizador:
+; User name:
+;
+MSG_LABEL_REALNAME
+Nome completo:
+; Full name:
+;
+MSG_LABEL_UID
+ID de utilizador:
+; User ID:
+;
+MSG_LABEL_GROUP
+Grupo:
+; Group:
+;
+MSG_LABEL_HOME
+Pasta pessoal:
+; Home directory:
+;
+MSG_LABEL_SHELL
+Shell:
+; Shell:
+;
+MSG_LABEL_PASSWORD
+Palavra-passe:
+; Password:
+;
+MSG_LABEL_RETYPE
+Repetir a palavra-passe:
+; Retype password:
+;
+MSG_LABEL_OLDPASSWORD
+Palavra-passe actual:
+; Current password:
+;
+MSG_LABEL_NEWPASSWORD
+Nova palavra-passe:
+; New password:
+;
+MSG_EDIT_PASSWORD_HINT
+Deixe a palavra-passe vazia para a manter.
+; Leave the password empty to keep it.
+;
+MSG_PASSWORD_TITLE
+Definir palavra-passe
+; Set Password
+;
+MSG_MYPASSWORD_TITLE
+Alterar a sua palavra-passe
+; Change Your Password
+;
+MSG_REQ_OK
+_Aceitar
+; _OK
+;
+MSG_REQ_YESNO
+_Apagar|_Cancelar
+; _Delete|_Cancel
+;
+MSG_REQ_DELETE
+Apagar a conta '%s'?\n\nOs seus ficheiros não são removidos.
+; Delete the account '%s'?\n\nIts files are not removed.
+;
+MSG_ERR_MISMATCH
+As palavras-passe não coincidem.
+; The passwords do not match.
+;
+MSG_ERR_NAME
+Introduza um nome de utilizador (sem espaços, ':' ou '|').
+; Please enter a user name (no spaces, ':' or '|').
+;
+MSG_ERR_UID
+Introduza um ID de utilizador entre 1 e 65535.
+; Please enter a user ID between 1 and 65535.
+;
+MSG_ERR_RENAME_PASSWORD
+Esta conta tem uma palavra-passe que depende do nome de utilizador:\nintroduza uma nova palavra-passe para a renomear.
+; This account has a password, which depends on the user name:\nplease enter a new password to rename it.
+;
+MSG_ERR_PERM
+Não tem permissão para isto, ou o nome e o número\ndo super utilizador não podem ser alterados.
+; You are not allowed to do this, or the super user's name\nand number cannot be changed.
+;
+MSG_ERR_NOENT
+Essa conta não existe.
+; There is no such account.
+;
+MSG_ERR_EXIST
+O nome de utilizador ou o ID de utilizador já está em uso.
+; The user name or user ID is already used.
+;
+MSG_ERR_INVAL
+Um campo é inválido, ou o grupo não existe.
+; A field is invalid, or the group does not exist.
+;
+MSG_ERR_IO
+Não foi possível escrever a base de contas. Nada foi alterado.
+; The account database could not be written. Nothing was changed.
+;
+MSG_ERR_NOSYS
+Não existe nenhuma base de contas para alterar.
+; There is no account database to change.
+;
+MSG_ERR_OTHER
+A alteração falhou (erro %ld).
+; The change failed (error %ld).
+;
+MSG_ERR_PAM
+A palavra-passe não foi alterada: %s
+; The password was not changed: %s
+;
+MSG_DONE_PASSWORD
+A palavra-passe foi alterada.
+; The password has been changed.
+;
+MSG_ERR_NOMUI
+O Accounts necessita da muimaster.library.
+; Accounts needs muimaster.library.
+;
+MSG_ERR_NOUSERGROUP
+O Accounts necessita da usergroup.library 4.12.
+; Accounts needs usergroup.library 4.12.
+;
+MSG_PAGE_USERS
+Utilizadores
+; Users
+;
+MSG_PAGE_GROUPS
+Grupos
+; Groups
+;
+MSG_COL_GROUPNAME
+\33bGrupo
+; \33bGroup
+;
+MSG_COL_GID
+\33bGID
+; \33bGID
+;
+MSG_COL_MEMBERS
+\33bMembros
+; \33bMembers
+;
+MSG_COL_DESCRIPTION
+\33bDescrição
+; \33bDescription
+;
+MSG_BUTTON_GADD
+A_dicionar...
+; A_dd...
+;
+MSG_BUTTON_GEDIT
+Edi_tar...
+; Ed_it...
+;
+MSG_BUTTON_GDELETE
+Ap_agar...
+; Dele_te...
+;
+MSG_GROUP_TITLE_ADD
+Novo grupo
+; New Group
+;
+MSG_GROUP_TITLE_EDIT
+Editar grupo
+; Edit Group
+;
+MSG_LABEL_GROUPNAME
+Nome do grupo:
+; Group name:
+;
+MSG_LABEL_GID
+ID do grupo:
+; Group ID:
+;
+MSG_LABEL_DESCRIPTION
+Descrição:
+; Description:
+;
+MSG_LABEL_MEMBERS
+Membros
+; Members
+;
+MSG_GROUP_PRIMARY
+Membros através do seu grupo principal: %s
+; Members through their primary group: %s
+;
+MSG_REQ_DELETE_GROUP
+Apagar o grupo '%s'?
+; Delete the group '%s'?
+;
+MSG_ERR_GROUPNAME
+Introduza um nome de grupo (sem espaços, ':', ',' ou '|').
+; Please enter a group name (no spaces, ':', ',' or '|').
+;
+MSG_ERR_GID
+Introduza um ID de grupo entre 1 e 65535.
+; Please enter a group ID between 1 and 65535.
+;
+MSG_ERR_BUSY
+Este grupo é o grupo principal de um utilizador:\nnão pode ser apagado nem renumerado.
+; This group is the primary group of a user:\nit cannot be deleted or renumbered.
+;
+MSG_ERR_GROUP_PERM
+Não tem permissão para isto, ou o grupo do super utilizador\nnão pode ser renomeado nem renumerado.
+; You are not allowed to do this, or the super user's group\ncannot be renamed or renumbered.
+;
+MSG_ERR_GROUP_NOENT
+Esse grupo não existe, ou um membro não existe.
+; There is no such group, or a member does not exist.
+;
+MSG_ERR_GROUP_EXIST
+O nome do grupo ou o ID do grupo já está em uso.
+; The group name or group ID is already used.
+;
+MSG_ERR_GROUP_IO
+Não foi possível escrever a base de grupos. Nada foi alterado.
+; The group database could not be written. Nothing was changed.
+;
+MSG_REQ_DEFAULTS
+Ainda não estão definidas contas de utilizador nem grupos.\n\nCriar as contas padrão (root, nobody, services e\nguest) e os grupos (admin, nobody, services, guests e\nusers)? Todas as contas excepto root ficam bloqueadas.
+; No user accounts or groups are defined yet.\n\nCreate the standard accounts (root, nobody, services and\nguest) and groups (admin, nobody, services, guests and\nusers)? All accounts but root are locked.
+;
+MSG_REQ_DEFAULTS_BUTTONS
+_Criar|_Agora não
+; _Create|_Not now
+;
+MSG_BUTTON_REMOVEPW
+Remo_ver palavra-passe...
+; _Remove password...
+;
+MSG_PASSWORD_FOR
+Conta: %s
+; Account: %s
+;
+MSG_ERR_EMPTY_PASSWORD
+Introduza a nova palavra-passe duas vezes.\nPara remover a palavra-passe, use "Remover palavra-passe".
+; Please enter the new password twice.\nTo remove the password, use "Remove password".
+;
+MSG_REQ_REMOVE_PASSWORD
+Remover a palavra-passe de '%s'?\n\nQualquer pessoa poderá então entrar com ela sem palavra-passe.\nUma conta bloqueada é desbloqueada.
+; Remove the password of '%s'?\n\nAnybody can then log in as it without one.\nA locked account is unlocked.
+;
+MSG_REQ_REMOVE_BUTTONS
+_Remover|_Cancelar
+; _Remove|_Cancel
+;
+MSG_DONE_REMOVED
+A palavra-passe foi removida.
+; The password has been removed.
+;
+MSG_READONLY_MEDIA
+A base de contas está num suporte só de leitura: não pode ser alterada.
+; The account database is on read-only media: it cannot be changed.
+;
+MSG_MENU_ACCOUNT
+Conta
+; Account
+;
+MSG_MENU_GROUP
+Grupo
+; Group
+;
+MSG_MENU_EDIT
+Editar...
+; Edit...
+;
+MSG_MENU_PASSWORD
+Definir palavra-passe...
+; Set password...
+;
+MSG_MENU_LOCK
+Bloquear
+; Lock
+;
+MSG_MENU_UNLOCK
+Desbloquear
+; Unlock
+;
+MSG_MENU_DELETE
+Apagar...
+; Delete...
+;
+MSG_MENU_ADD_ACCOUNT
+Nova conta...
+; New account...
+;
+MSG_MENU_ADD_GROUP
+Novo grupo...
+; New group...
+;

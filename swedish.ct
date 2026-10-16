@@ -1,0 +1,400 @@
+## version $VER: Accounts.catalog 1.0 (16.10.2026)
+## language svenska
+## codeset 0
+;
+MSG_TITLE
+Accounts
+; Accounts
+;
+MSG_DESCRIPTION
+Hantera användarkonton och grupper
+; Manage user accounts and groups
+;
+MSG_MODE_SECURITY
+Fleranvändarsystem (security.library)
+; Multi-user system (security.library)
+;
+MSG_MODE_SINGLE
+Enanvändarsystem (nätverkslösenordsdatabas)
+; Single-user system (network password database)
+;
+MSG_NOT_ADMIN
+Endast root kan ändra andra konton.
+; Only root can change other accounts.
+;
+MSG_COL_NAME
+\33bAnvändare
+; \33bUser
+;
+MSG_COL_UID
+\33bUID
+; \33bUID
+;
+MSG_COL_GROUP
+\33bGrupp
+; \33bGroup
+;
+MSG_COL_REALNAME
+\33bNamn
+; \33bName
+;
+MSG_COL_HOME
+\33bHem
+; \33bHome
+;
+MSG_COL_STATUS
+\33bStatus
+; \33bStatus
+;
+MSG_STATUS_LOCKED
+Låst
+; Locked
+;
+MSG_STATUS_NOPASSWORD
+Inget lösenord
+; No password
+;
+MSG_BUTTON_ADD
+_Lägg till...
+; _Add...
+;
+MSG_BUTTON_EDIT
+_Redigera...
+; _Edit...
+;
+MSG_BUTTON_PASSWORD
+Lösenor_d...
+; _Password...
+;
+MSG_BUTTON_LOCK
+Lå_s
+; _Lock
+;
+MSG_BUTTON_UNLOCK
+Lås _upp
+; _Unlock
+;
+MSG_BUTTON_DELETE
+_Ta bort...
+; _Delete...
+;
+MSG_BUTTON_MYPASSWORD
+Byt _mitt lösenord...
+; Change _my password...
+;
+MSG_BUTTON_LOGIN
+Logga in som r_oot...
+; Log in as _root...
+;
+MSG_BUTTON_REFRESH
+U_ppdatera
+; Re_fresh
+;
+MSG_BUTTON_SAVE
+_Spara
+; _Save
+;
+MSG_BUTTON_CANCEL
+A_vbryt
+; _Cancel
+;
+MSG_EDIT_TITLE_ADD
+Nytt konto
+; New Account
+;
+MSG_EDIT_TITLE_EDIT
+Redigera konto
+; Edit Account
+;
+MSG_LABEL_NAME
+Användarnamn:
+; User name:
+;
+MSG_LABEL_REALNAME
+Fullständigt namn:
+; Full name:
+;
+MSG_LABEL_UID
+Användar-ID:
+; User ID:
+;
+MSG_LABEL_GROUP
+Grupp:
+; Group:
+;
+MSG_LABEL_HOME
+Hemkatalog:
+; Home directory:
+;
+MSG_LABEL_SHELL
+Shell:
+; Shell:
+;
+MSG_LABEL_PASSWORD
+Lösenord:
+; Password:
+;
+MSG_LABEL_RETYPE
+Upprepa lösenord:
+; Retype password:
+;
+MSG_LABEL_OLDPASSWORD
+Nuvarande lösenord:
+; Current password:
+;
+MSG_LABEL_NEWPASSWORD
+Nytt lösenord:
+; New password:
+;
+MSG_EDIT_PASSWORD_HINT
+Lämna lösenordet tomt för att behålla det.
+; Leave the password empty to keep it.
+;
+MSG_PASSWORD_TITLE
+Ange lösenord
+; Set Password
+;
+MSG_MYPASSWORD_TITLE
+Byt ditt lösenord
+; Change Your Password
+;
+MSG_REQ_OK
+_OK
+; _OK
+;
+MSG_REQ_YESNO
+_Ta bort|A_vbryt
+; _Delete|_Cancel
+;
+MSG_REQ_DELETE
+Ta bort kontot '%s'?\n\nDess filer tas inte bort.
+; Delete the account '%s'?\n\nIts files are not removed.
+;
+MSG_ERR_MISMATCH
+Lösenorden stämmer inte överens.
+; The passwords do not match.
+;
+MSG_ERR_NAME
+Ange ett användarnamn (inga blanksteg, ':' eller '|').
+; Please enter a user name (no spaces, ':' or '|').
+;
+MSG_ERR_UID
+Ange ett användar-ID mellan 1 och 65535.
+; Please enter a user ID between 1 and 65535.
+;
+MSG_ERR_RENAME_PASSWORD
+Detta konto har ett lösenord som beror på användarnamnet:\nange ett nytt lösenord för att byta namn på det.
+; This account has a password, which depends on the user name:\nplease enter a new password to rename it.
+;
+MSG_ERR_PERM
+Du får inte göra detta, eller superanvändarens namn\noch nummer kan inte ändras.
+; You are not allowed to do this, or the super user's name\nand number cannot be changed.
+;
+MSG_ERR_NOENT
+Det kontot finns inte.
+; There is no such account.
+;
+MSG_ERR_EXIST
+Användarnamnet eller användar-ID:t används redan.
+; The user name or user ID is already used.
+;
+MSG_ERR_INVAL
+Ett fält är ogiltigt, eller gruppen finns inte.
+; A field is invalid, or the group does not exist.
+;
+MSG_ERR_IO
+Kontodatabasen kunde inte skrivas. Inget ändrades.
+; The account database could not be written. Nothing was changed.
+;
+MSG_ERR_NOSYS
+Det finns ingen kontodatabas att ändra.
+; There is no account database to change.
+;
+MSG_ERR_OTHER
+Ändringen misslyckades (fel %ld).
+; The change failed (error %ld).
+;
+MSG_ERR_PAM
+Lösenordet ändrades inte: %s
+; The password was not changed: %s
+;
+MSG_DONE_PASSWORD
+Lösenordet har ändrats.
+; The password has been changed.
+;
+MSG_ERR_NOMUI
+Accounts kräver muimaster.library.
+; Accounts needs muimaster.library.
+;
+MSG_ERR_NOUSERGROUP
+Accounts kräver usergroup.library 4.12.
+; Accounts needs usergroup.library 4.12.
+;
+MSG_PAGE_USERS
+Användare
+; Users
+;
+MSG_PAGE_GROUPS
+Grupper
+; Groups
+;
+MSG_COL_GROUPNAME
+\33bGrupp
+; \33bGroup
+;
+MSG_COL_GID
+\33bGID
+; \33bGID
+;
+MSG_COL_MEMBERS
+\33bMedlemmar
+; \33bMembers
+;
+MSG_COL_DESCRIPTION
+\33bBeskrivning
+; \33bDescription
+;
+MSG_BUTTON_GADD
+Lägg til_l...
+; A_dd...
+;
+MSG_BUTTON_GEDIT
+R_edigera...
+; Ed_it...
+;
+MSG_BUTTON_GDELETE
+Ta bor_t...
+; Dele_te...
+;
+MSG_GROUP_TITLE_ADD
+Ny grupp
+; New Group
+;
+MSG_GROUP_TITLE_EDIT
+Redigera grupp
+; Edit Group
+;
+MSG_LABEL_GROUPNAME
+Gruppnamn:
+; Group name:
+;
+MSG_LABEL_GID
+Grupp-ID:
+; Group ID:
+;
+MSG_LABEL_DESCRIPTION
+Beskrivning:
+; Description:
+;
+MSG_LABEL_MEMBERS
+Medlemmar
+; Members
+;
+MSG_GROUP_PRIMARY
+Medlemmar via sin primära grupp: %s
+; Members through their primary group: %s
+;
+MSG_REQ_DELETE_GROUP
+Ta bort gruppen '%s'?
+; Delete the group '%s'?
+;
+MSG_ERR_GROUPNAME
+Ange ett gruppnamn (inga blanksteg, ':', ',' eller '|').
+; Please enter a group name (no spaces, ':', ',' or '|').
+;
+MSG_ERR_GID
+Ange ett grupp-ID mellan 1 och 65535.
+; Please enter a group ID between 1 and 65535.
+;
+MSG_ERR_BUSY
+Denna grupp är en användares primära grupp:\nden kan inte tas bort eller numreras om.
+; This group is the primary group of a user:\nit cannot be deleted or renumbered.
+;
+MSG_ERR_GROUP_PERM
+Du får inte göra detta, eller superanvändarens grupp\nkan inte byta namn eller numreras om.
+; You are not allowed to do this, or the super user's group\ncannot be renamed or renumbered.
+;
+MSG_ERR_GROUP_NOENT
+Den gruppen finns inte, eller en medlem finns inte.
+; There is no such group, or a member does not exist.
+;
+MSG_ERR_GROUP_EXIST
+Gruppnamnet eller grupp-ID:t används redan.
+; The group name or group ID is already used.
+;
+MSG_ERR_GROUP_IO
+Gruppdatabasen kunde inte skrivas. Inget ändrades.
+; The group database could not be written. Nothing was changed.
+;
+MSG_REQ_DEFAULTS
+Inga användarkonton eller grupper är definierade än.\n\nSkapa standardkontona (root, nobody, services och\nguest) och grupperna (admin, nobody, services, guests och\nusers)? Alla konton utom root är låsta.
+; No user accounts or groups are defined yet.\n\nCreate the standard accounts (root, nobody, services and\nguest) and groups (admin, nobody, services, guests and\nusers)? All accounts but root are locked.
+;
+MSG_REQ_DEFAULTS_BUTTONS
+_Skapa|_Inte nu
+; _Create|_Not now
+;
+MSG_BUTTON_REMOVEPW
+Ta _bort lösenord...
+; _Remove password...
+;
+MSG_PASSWORD_FOR
+Konto: %s
+; Account: %s
+;
+MSG_ERR_EMPTY_PASSWORD
+Ange det nya lösenordet två gånger.\nAnvänd "Ta bort lösenord" för att ta bort lösenordet.
+; Please enter the new password twice.\nTo remove the password, use "Remove password".
+;
+MSG_REQ_REMOVE_PASSWORD
+Ta bort lösenordet för '%s'?\n\nVem som helst kan sedan logga in som det utan något.\nEtt låst konto låses upp.
+; Remove the password of '%s'?\n\nAnybody can then log in as it without one.\nA locked account is unlocked.
+;
+MSG_REQ_REMOVE_BUTTONS
+_Ta bort|A_vbryt
+; _Remove|_Cancel
+;
+MSG_DONE_REMOVED
+Lösenordet har tagits bort.
+; The password has been removed.
+;
+MSG_READONLY_MEDIA
+Kontodatabasen finns på ett skrivskyddat medium: den kan inte ändras.
+; The account database is on read-only media: it cannot be changed.
+;
+MSG_MENU_ACCOUNT
+Konto
+; Account
+;
+MSG_MENU_GROUP
+Grupp
+; Group
+;
+MSG_MENU_EDIT
+Redigera...
+; Edit...
+;
+MSG_MENU_PASSWORD
+Ange lösenord...
+; Set password...
+;
+MSG_MENU_LOCK
+Lås
+; Lock
+;
+MSG_MENU_UNLOCK
+Lås upp
+; Unlock
+;
+MSG_MENU_DELETE
+Ta bort...
+; Delete...
+;
+MSG_MENU_ADD_ACCOUNT
+Nytt konto...
+; New account...
+;
+MSG_MENU_ADD_GROUP
+Ny grupp...
+; New group...
+;

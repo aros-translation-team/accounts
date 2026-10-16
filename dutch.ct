@@ -1,0 +1,400 @@
+## version $VER: Accounts.catalog 1.0 (16.10.2026)
+## language nederlands
+## codeset 0
+;
+MSG_TITLE
+Accounts
+; Accounts
+;
+MSG_DESCRIPTION
+Gebruikersaccounts en groepen beheren
+; Manage user accounts and groups
+;
+MSG_MODE_SECURITY
+Multi-usersysteem (security.library)
+; Multi-user system (security.library)
+;
+MSG_MODE_SINGLE
+Single-usersysteem (netwerkwachtwoorddatabase)
+; Single-user system (network password database)
+;
+MSG_NOT_ADMIN
+Alleen root kan andere accounts wijzigen.
+; Only root can change other accounts.
+;
+MSG_COL_NAME
+\33bGebruiker
+; \33bUser
+;
+MSG_COL_UID
+\33bUID
+; \33bUID
+;
+MSG_COL_GROUP
+\33bGroep
+; \33bGroup
+;
+MSG_COL_REALNAME
+\33bNaam
+; \33bName
+;
+MSG_COL_HOME
+\33bHome
+; \33bHome
+;
+MSG_COL_STATUS
+\33bStatus
+; \33bStatus
+;
+MSG_STATUS_LOCKED
+Vergrendeld
+; Locked
+;
+MSG_STATUS_NOPASSWORD
+Geen wachtwoord
+; No password
+;
+MSG_BUTTON_ADD
+_Toevoegen...
+; _Add...
+;
+MSG_BUTTON_EDIT
+_Bewerken...
+; _Edit...
+;
+MSG_BUTTON_PASSWORD
+_Wachtwoord...
+; _Password...
+;
+MSG_BUTTON_LOCK
+Ver_grendelen
+; _Lock
+;
+MSG_BUTTON_UNLOCK
+_Ontgrendelen
+; _Unlock
+;
+MSG_BUTTON_DELETE
+_Verwijderen...
+; _Delete...
+;
+MSG_BUTTON_MYPASSWORD
+Mijn wachtwoord wij_zigen...
+; Change _my password...
+;
+MSG_BUTTON_LOGIN
+_Inloggen als root...
+; Log in as _root...
+;
+MSG_BUTTON_REFRESH
+Ve_rnieuwen
+; Re_fresh
+;
+MSG_BUTTON_SAVE
+_Bewaar
+; _Save
+;
+MSG_BUTTON_CANCEL
+_Annuleer
+; _Cancel
+;
+MSG_EDIT_TITLE_ADD
+Nieuw account
+; New Account
+;
+MSG_EDIT_TITLE_EDIT
+Account bewerken
+; Edit Account
+;
+MSG_LABEL_NAME
+Gebruikersnaam:
+; User name:
+;
+MSG_LABEL_REALNAME
+Volledige naam:
+; Full name:
+;
+MSG_LABEL_UID
+Gebruikers-ID:
+; User ID:
+;
+MSG_LABEL_GROUP
+Groep:
+; Group:
+;
+MSG_LABEL_HOME
+Thuismap:
+; Home directory:
+;
+MSG_LABEL_SHELL
+Shell:
+; Shell:
+;
+MSG_LABEL_PASSWORD
+Wachtwoord:
+; Password:
+;
+MSG_LABEL_RETYPE
+Wachtwoord herhalen:
+; Retype password:
+;
+MSG_LABEL_OLDPASSWORD
+Huidig wachtwoord:
+; Current password:
+;
+MSG_LABEL_NEWPASSWORD
+Nieuw wachtwoord:
+; New password:
+;
+MSG_EDIT_PASSWORD_HINT
+Laat het wachtwoord leeg om het te behouden.
+; Leave the password empty to keep it.
+;
+MSG_PASSWORD_TITLE
+Wachtwoord instellen
+; Set Password
+;
+MSG_MYPASSWORD_TITLE
+Uw wachtwoord wijzigen
+; Change Your Password
+;
+MSG_REQ_OK
+_OK
+; _OK
+;
+MSG_REQ_YESNO
+_Verwijder|_Annuleer
+; _Delete|_Cancel
+;
+MSG_REQ_DELETE
+Het account '%s' verwijderen?\n\nDe bestanden worden niet verwijderd.
+; Delete the account '%s'?\n\nIts files are not removed.
+;
+MSG_ERR_MISMATCH
+De wachtwoorden komen niet overeen.
+; The passwords do not match.
+;
+MSG_ERR_NAME
+Voer een gebruikersnaam in (geen spaties, ':' of '|').
+; Please enter a user name (no spaces, ':' or '|').
+;
+MSG_ERR_UID
+Voer een gebruikers-ID tussen 1 en 65535 in.
+; Please enter a user ID between 1 and 65535.
+;
+MSG_ERR_RENAME_PASSWORD
+Dit account heeft een wachtwoord dat afhangt van de gebruikersnaam:\nvoer een nieuw wachtwoord in om het te hernoemen.
+; This account has a password, which depends on the user name:\nplease enter a new password to rename it.
+;
+MSG_ERR_PERM
+U mag dit niet, of de naam en het nummer van de\nsuperuser kunnen niet worden gewijzigd.
+; You are not allowed to do this, or the super user's name\nand number cannot be changed.
+;
+MSG_ERR_NOENT
+Dat account bestaat niet.
+; There is no such account.
+;
+MSG_ERR_EXIST
+De gebruikersnaam of het gebruikers-ID is al in gebruik.
+; The user name or user ID is already used.
+;
+MSG_ERR_INVAL
+Een veld is ongeldig, of de groep bestaat niet.
+; A field is invalid, or the group does not exist.
+;
+MSG_ERR_IO
+De accountdatabase kon niet worden geschreven. Er is niets gewijzigd.
+; The account database could not be written. Nothing was changed.
+;
+MSG_ERR_NOSYS
+Er is geen accountdatabase om te wijzigen.
+; There is no account database to change.
+;
+MSG_ERR_OTHER
+De wijziging is mislukt (fout %ld).
+; The change failed (error %ld).
+;
+MSG_ERR_PAM
+Het wachtwoord is niet gewijzigd: %s
+; The password was not changed: %s
+;
+MSG_DONE_PASSWORD
+Het wachtwoord is gewijzigd.
+; The password has been changed.
+;
+MSG_ERR_NOMUI
+Accounts heeft muimaster.library nodig.
+; Accounts needs muimaster.library.
+;
+MSG_ERR_NOUSERGROUP
+Accounts heeft usergroup.library 4.12 nodig.
+; Accounts needs usergroup.library 4.12.
+;
+MSG_PAGE_USERS
+Gebruikers
+; Users
+;
+MSG_PAGE_GROUPS
+Groepen
+; Groups
+;
+MSG_COL_GROUPNAME
+\33bGroep
+; \33bGroup
+;
+MSG_COL_GID
+\33bGID
+; \33bGID
+;
+MSG_COL_MEMBERS
+\33bLeden
+; \33bMembers
+;
+MSG_COL_DESCRIPTION
+\33bBeschrijving
+; \33bDescription
+;
+MSG_BUTTON_GADD
+T_oevoegen...
+; A_dd...
+;
+MSG_BUTTON_GEDIT
+B_ewerken...
+; Ed_it...
+;
+MSG_BUTTON_GDELETE
+Verwij_deren...
+; Dele_te...
+;
+MSG_GROUP_TITLE_ADD
+Nieuwe groep
+; New Group
+;
+MSG_GROUP_TITLE_EDIT
+Groep bewerken
+; Edit Group
+;
+MSG_LABEL_GROUPNAME
+Groepsnaam:
+; Group name:
+;
+MSG_LABEL_GID
+Groeps-ID:
+; Group ID:
+;
+MSG_LABEL_DESCRIPTION
+Beschrijving:
+; Description:
+;
+MSG_LABEL_MEMBERS
+Leden
+; Members
+;
+MSG_GROUP_PRIMARY
+Leden via hun primaire groep: %s
+; Members through their primary group: %s
+;
+MSG_REQ_DELETE_GROUP
+De groep '%s' verwijderen?
+; Delete the group '%s'?
+;
+MSG_ERR_GROUPNAME
+Voer een groepsnaam in (geen spaties, ':', ',' of '|').
+; Please enter a group name (no spaces, ':', ',' or '|').
+;
+MSG_ERR_GID
+Voer een groeps-ID tussen 1 en 65535 in.
+; Please enter a group ID between 1 and 65535.
+;
+MSG_ERR_BUSY
+Deze groep is de primaire groep van een gebruiker:\nhij kan niet worden verwijderd of hernummerd.
+; This group is the primary group of a user:\nit cannot be deleted or renumbered.
+;
+MSG_ERR_GROUP_PERM
+U mag dit niet, of de groep van de superuser kan niet\nworden hernoemd of hernummerd.
+; You are not allowed to do this, or the super user's group\ncannot be renamed or renumbered.
+;
+MSG_ERR_GROUP_NOENT
+Die groep bestaat niet, of een lid bestaat niet.
+; There is no such group, or a member does not exist.
+;
+MSG_ERR_GROUP_EXIST
+De groepsnaam of het groeps-ID is al in gebruik.
+; The group name or group ID is already used.
+;
+MSG_ERR_GROUP_IO
+De groepsdatabase kon niet worden geschreven. Er is niets gewijzigd.
+; The group database could not be written. Nothing was changed.
+;
+MSG_REQ_DEFAULTS
+Er zijn nog geen gebruikersaccounts of groepen gedefinieerd.\n\nDe standaardaccounts (root, nobody, services en\nguest) en -groepen (admin, nobody, services, guests en\nusers) aanmaken? Alle accounts behalve root zijn vergrendeld.
+; No user accounts or groups are defined yet.\n\nCreate the standard accounts (root, nobody, services and\nguest) and groups (admin, nobody, services, guests and\nusers)? All accounts but root are locked.
+;
+MSG_REQ_DEFAULTS_BUTTONS
+_Aanmaken|_Niet nu
+; _Create|_Not now
+;
+MSG_BUTTON_REMOVEPW
+Wachtwoord verwij_deren...
+; _Remove password...
+;
+MSG_PASSWORD_FOR
+Account: %s
+; Account: %s
+;
+MSG_ERR_EMPTY_PASSWORD
+Voer het nieuwe wachtwoord twee keer in.\nGebruik "Wachtwoord verwijderen" om het wachtwoord te verwijderen.
+; Please enter the new password twice.\nTo remove the password, use "Remove password".
+;
+MSG_REQ_REMOVE_PASSWORD
+Het wachtwoord van '%s' verwijderen?\n\nIedereen kan er dan zonder wachtwoord op inloggen.\nEen vergrendeld account wordt ontgrendeld.
+; Remove the password of '%s'?\n\nAnybody can then log in as it without one.\nA locked account is unlocked.
+;
+MSG_REQ_REMOVE_BUTTONS
+_Verwijder|_Annuleer
+; _Remove|_Cancel
+;
+MSG_DONE_REMOVED
+Het wachtwoord is verwijderd.
+; The password has been removed.
+;
+MSG_READONLY_MEDIA
+De accountdatabase staat op een alleen-lezen medium: hij kan niet worden gewijzigd.
+; The account database is on read-only media: it cannot be changed.
+;
+MSG_MENU_ACCOUNT
+Account
+; Account
+;
+MSG_MENU_GROUP
+Groep
+; Group
+;
+MSG_MENU_EDIT
+Bewerken...
+; Edit...
+;
+MSG_MENU_PASSWORD
+Wachtwoord instellen...
+; Set password...
+;
+MSG_MENU_LOCK
+Vergrendelen
+; Lock
+;
+MSG_MENU_UNLOCK
+Ontgrendelen
+; Unlock
+;
+MSG_MENU_DELETE
+Verwijderen...
+; Delete...
+;
+MSG_MENU_ADD_ACCOUNT
+Nieuw account...
+; New account...
+;
+MSG_MENU_ADD_GROUP
+Nieuwe groep...
+; New group...
+;

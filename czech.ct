@@ -1,0 +1,400 @@
+## version $VER: Accounts.catalog 1.0 (16.10.2026)
+## language czech
+## codeset 5
+;
+MSG_TITLE
+Accounts
+; Accounts
+;
+MSG_DESCRIPTION
+Správa u¾ivatelských úètù a skupin
+; Manage user accounts and groups
+;
+MSG_MODE_SECURITY
+Víceu¾ivatelský systém (security.library)
+; Multi-user system (security.library)
+;
+MSG_MODE_SINGLE
+Jednou¾ivatelský systém (sí»ová databáze hesel)
+; Single-user system (network password database)
+;
+MSG_NOT_ADMIN
+Jen root mù¾e mìnit jiné úèty.
+; Only root can change other accounts.
+;
+MSG_COL_NAME
+\33bU¾ivatel
+; \33bUser
+;
+MSG_COL_UID
+\33bUID
+; \33bUID
+;
+MSG_COL_GROUP
+\33bSkupina
+; \33bGroup
+;
+MSG_COL_REALNAME
+\33bJméno
+; \33bName
+;
+MSG_COL_HOME
+\33bDomov
+; \33bHome
+;
+MSG_COL_STATUS
+\33bStav
+; \33bStatus
+;
+MSG_STATUS_LOCKED
+Uzamèeno
+; Locked
+;
+MSG_STATUS_NOPASSWORD
+Bez hesla
+; No password
+;
+MSG_BUTTON_ADD
+_Pøidat...
+; _Add...
+;
+MSG_BUTTON_EDIT
+_Upravit...
+; _Edit...
+;
+MSG_BUTTON_PASSWORD
+_Heslo...
+; _Password...
+;
+MSG_BUTTON_LOCK
+_Zamknout
+; _Lock
+;
+MSG_BUTTON_UNLOCK
+_Odemknout
+; _Unlock
+;
+MSG_BUTTON_DELETE
+_Smazat...
+; _Delete...
+;
+MSG_BUTTON_MYPASSWORD
+Zmìnit _mé heslo...
+; Change _my password...
+;
+MSG_BUTTON_LOGIN
+Pøihlásit se jako roo_t...
+; Log in as _root...
+;
+MSG_BUTTON_REFRESH
+O_bnovit
+; Re_fresh
+;
+MSG_BUTTON_SAVE
+_Ulo¾it
+; _Save
+;
+MSG_BUTTON_CANCEL
+_Zru¹it
+; _Cancel
+;
+MSG_EDIT_TITLE_ADD
+Nový úèet
+; New Account
+;
+MSG_EDIT_TITLE_EDIT
+Úprava úètu
+; Edit Account
+;
+MSG_LABEL_NAME
+U¾ivatelské jméno:
+; User name:
+;
+MSG_LABEL_REALNAME
+Celé jméno:
+; Full name:
+;
+MSG_LABEL_UID
+ID u¾ivatele:
+; User ID:
+;
+MSG_LABEL_GROUP
+Skupina:
+; Group:
+;
+MSG_LABEL_HOME
+Domovský adresáø:
+; Home directory:
+;
+MSG_LABEL_SHELL
+Shell:
+; Shell:
+;
+MSG_LABEL_PASSWORD
+Heslo:
+; Password:
+;
+MSG_LABEL_RETYPE
+Heslo znovu:
+; Retype password:
+;
+MSG_LABEL_OLDPASSWORD
+Souèasné heslo:
+; Current password:
+;
+MSG_LABEL_NEWPASSWORD
+Nové heslo:
+; New password:
+;
+MSG_EDIT_PASSWORD_HINT
+Ponechte heslo prázdné, chcete-li je zachovat.
+; Leave the password empty to keep it.
+;
+MSG_PASSWORD_TITLE
+Nastavit heslo
+; Set Password
+;
+MSG_MYPASSWORD_TITLE
+Zmìnit va¹e heslo
+; Change Your Password
+;
+MSG_REQ_OK
+_OK
+; _OK
+;
+MSG_REQ_YESNO
+_Smazat|_Zru¹it
+; _Delete|_Cancel
+;
+MSG_REQ_DELETE
+Smazat úèet '%s'?\n\nJeho soubory nebudou odstranìny.
+; Delete the account '%s'?\n\nIts files are not removed.
+;
+MSG_ERR_MISMATCH
+Hesla se neshodují.
+; The passwords do not match.
+;
+MSG_ERR_NAME
+Zadejte u¾ivatelské jméno (bez mezer, ':' nebo '|').
+; Please enter a user name (no spaces, ':' or '|').
+;
+MSG_ERR_UID
+Zadejte ID u¾ivatele mezi 1 a 65535.
+; Please enter a user ID between 1 and 65535.
+;
+MSG_ERR_RENAME_PASSWORD
+Tento úèet má heslo, které závisí na u¾ivatelském jménu:\nzadejte nové heslo, abyste jej pøejmenovali.
+; This account has a password, which depends on the user name:\nplease enter a new password to rename it.
+;
+MSG_ERR_PERM
+K tomu nemáte právo, nebo jméno a èíslo\nsuperu¾ivatele nelze zmìnit.
+; You are not allowed to do this, or the super user's name\nand number cannot be changed.
+;
+MSG_ERR_NOENT
+Takový úèet neexistuje.
+; There is no such account.
+;
+MSG_ERR_EXIST
+U¾ivatelské jméno nebo ID u¾ivatele se ji¾ pou¾ívá.
+; The user name or user ID is already used.
+;
+MSG_ERR_INVAL
+Pole je neplatné, nebo skupina neexistuje.
+; A field is invalid, or the group does not exist.
+;
+MSG_ERR_IO
+Databázi úètù nelze zapsat. Nic nebylo zmìnìno.
+; The account database could not be written. Nothing was changed.
+;
+MSG_ERR_NOSYS
+Není ¾ádná databáze úètù ke zmìnì.
+; There is no account database to change.
+;
+MSG_ERR_OTHER
+Zmìna se nezdaøila (chyba %ld).
+; The change failed (error %ld).
+;
+MSG_ERR_PAM
+Heslo nebylo zmìnìno: %s
+; The password was not changed: %s
+;
+MSG_DONE_PASSWORD
+Heslo bylo zmìnìno.
+; The password has been changed.
+;
+MSG_ERR_NOMUI
+Accounts potøebuje muimaster.library.
+; Accounts needs muimaster.library.
+;
+MSG_ERR_NOUSERGROUP
+Accounts potøebuje usergroup.library 4.12.
+; Accounts needs usergroup.library 4.12.
+;
+MSG_PAGE_USERS
+U¾ivatelé
+; Users
+;
+MSG_PAGE_GROUPS
+Skupiny
+; Groups
+;
+MSG_COL_GROUPNAME
+\33bSkupina
+; \33bGroup
+;
+MSG_COL_GID
+\33bGID
+; \33bGID
+;
+MSG_COL_MEMBERS
+\33bÈlenové
+; \33bMembers
+;
+MSG_COL_DESCRIPTION
+\33bPopis
+; \33bDescription
+;
+MSG_BUTTON_GADD
+Pøi_dat...
+; A_dd...
+;
+MSG_BUTTON_GEDIT
+U_pravit...
+; Ed_it...
+;
+MSG_BUTTON_GDELETE
+Smaz_at...
+; Dele_te...
+;
+MSG_GROUP_TITLE_ADD
+Nová skupina
+; New Group
+;
+MSG_GROUP_TITLE_EDIT
+Úprava skupiny
+; Edit Group
+;
+MSG_LABEL_GROUPNAME
+Název skupiny:
+; Group name:
+;
+MSG_LABEL_GID
+ID skupiny:
+; Group ID:
+;
+MSG_LABEL_DESCRIPTION
+Popis:
+; Description:
+;
+MSG_LABEL_MEMBERS
+Èlenové
+; Members
+;
+MSG_GROUP_PRIMARY
+Èlenové prostøednictvím své hlavní skupiny: %s
+; Members through their primary group: %s
+;
+MSG_REQ_DELETE_GROUP
+Smazat skupinu '%s'?
+; Delete the group '%s'?
+;
+MSG_ERR_GROUPNAME
+Zadejte název skupiny (bez mezer, ':', ',' nebo '|').
+; Please enter a group name (no spaces, ':', ',' or '|').
+;
+MSG_ERR_GID
+Zadejte ID skupiny mezi 1 a 65535.
+; Please enter a group ID between 1 and 65535.
+;
+MSG_ERR_BUSY
+Tato skupina je hlavní skupinou u¾ivatele:\nnelze ji smazat ani pøeèíslovat.
+; This group is the primary group of a user:\nit cannot be deleted or renumbered.
+;
+MSG_ERR_GROUP_PERM
+K tomu nemáte právo, nebo skupinu superu¾ivatele\nnelze pøejmenovat ani pøeèíslovat.
+; You are not allowed to do this, or the super user's group\ncannot be renamed or renumbered.
+;
+MSG_ERR_GROUP_NOENT
+Taková skupina neexistuje, nebo èlen neexistuje.
+; There is no such group, or a member does not exist.
+;
+MSG_ERR_GROUP_EXIST
+Název skupiny nebo ID skupiny se ji¾ pou¾ívá.
+; The group name or group ID is already used.
+;
+MSG_ERR_GROUP_IO
+Databázi skupin nelze zapsat. Nic nebylo zmìnìno.
+; The group database could not be written. Nothing was changed.
+;
+MSG_REQ_DEFAULTS
+Nejsou dosud urèeny ¾ádné u¾ivatelské úèty ani skupiny.\n\nVytvoøit standardní úèty (root, nobody, services a\nguest) a skupiny (admin, nobody, services, guests a\nusers)? V¹echny úèty kromì root jsou uzamèeny.
+; No user accounts or groups are defined yet.\n\nCreate the standard accounts (root, nobody, services and\nguest) and groups (admin, nobody, services, guests and\nusers)? All accounts but root are locked.
+;
+MSG_REQ_DEFAULTS_BUTTONS
+_Vytvoøit|_Nyní ne
+; _Create|_Not now
+;
+MSG_BUTTON_REMOVEPW
+Odstranit hes_lo...
+; _Remove password...
+;
+MSG_PASSWORD_FOR
+Úèet: %s
+; Account: %s
+;
+MSG_ERR_EMPTY_PASSWORD
+Zadejte nové heslo dvakrát.\nChcete-li heslo odstranit, pou¾ijte "Odstranit heslo".
+; Please enter the new password twice.\nTo remove the password, use "Remove password".
+;
+MSG_REQ_REMOVE_PASSWORD
+Odstranit heslo úètu '%s'?\n\nKdokoli se pak pod ním mù¾e pøihlásit bez hesla.\nUzamèený úèet bude odemèen.
+; Remove the password of '%s'?\n\nAnybody can then log in as it without one.\nA locked account is unlocked.
+;
+MSG_REQ_REMOVE_BUTTONS
+_Odstranit|_Zru¹it
+; _Remove|_Cancel
+;
+MSG_DONE_REMOVED
+Heslo bylo odstranìno.
+; The password has been removed.
+;
+MSG_READONLY_MEDIA
+Databáze úètù je na médiu jen pro ètení: nelze ji zmìnit.
+; The account database is on read-only media: it cannot be changed.
+;
+MSG_MENU_ACCOUNT
+Úèet
+; Account
+;
+MSG_MENU_GROUP
+Skupina
+; Group
+;
+MSG_MENU_EDIT
+Upravit...
+; Edit...
+;
+MSG_MENU_PASSWORD
+Nastavit heslo...
+; Set password...
+;
+MSG_MENU_LOCK
+Zamknout
+; Lock
+;
+MSG_MENU_UNLOCK
+Odemknout
+; Unlock
+;
+MSG_MENU_DELETE
+Smazat...
+; Delete...
+;
+MSG_MENU_ADD_ACCOUNT
+Nový úèet...
+; New account...
+;
+MSG_MENU_ADD_GROUP
+Nová skupina...
+; New group...
+;

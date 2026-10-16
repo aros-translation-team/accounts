@@ -1,0 +1,400 @@
+## version $VER: Accounts.catalog 1.0 (16.10.2026)
+## language dansk
+## codeset 0
+;
+MSG_TITLE
+Accounts
+; Accounts
+;
+MSG_DESCRIPTION
+Administrer brugerkonti og grupper
+; Manage user accounts and groups
+;
+MSG_MODE_SECURITY
+Flerbrugersystem (security.library)
+; Multi-user system (security.library)
+;
+MSG_MODE_SINGLE
+Enkeltbrugersystem (netværksdatabase med adgangskoder)
+; Single-user system (network password database)
+;
+MSG_NOT_ADMIN
+Kun root kan ændre andre konti.
+; Only root can change other accounts.
+;
+MSG_COL_NAME
+\33bBruger
+; \33bUser
+;
+MSG_COL_UID
+\33bUID
+; \33bUID
+;
+MSG_COL_GROUP
+\33bGruppe
+; \33bGroup
+;
+MSG_COL_REALNAME
+\33bNavn
+; \33bName
+;
+MSG_COL_HOME
+\33bHjem
+; \33bHome
+;
+MSG_COL_STATUS
+\33bStatus
+; \33bStatus
+;
+MSG_STATUS_LOCKED
+Låst
+; Locked
+;
+MSG_STATUS_NOPASSWORD
+Ingen adgangskode
+; No password
+;
+MSG_BUTTON_ADD
+_Tilføj...
+; _Add...
+;
+MSG_BUTTON_EDIT
+_Redigér...
+; _Edit...
+;
+MSG_BUTTON_PASSWORD
+_Adgangskode...
+; _Password...
+;
+MSG_BUTTON_LOCK
+_Lås
+; _Lock
+;
+MSG_BUTTON_UNLOCK
+Lås _op
+; _Unlock
+;
+MSG_BUTTON_DELETE
+_Slet...
+; _Delete...
+;
+MSG_BUTTON_MYPASSWORD
+Skift _min adgangskode...
+; Change _my password...
+;
+MSG_BUTTON_LOGIN
+Lo_g ind som root...
+; Log in as _root...
+;
+MSG_BUTTON_REFRESH
+Op_datér
+; Re_fresh
+;
+MSG_BUTTON_SAVE
+_Gem
+; _Save
+;
+MSG_BUTTON_CANCEL
+_Afbryd
+; _Cancel
+;
+MSG_EDIT_TITLE_ADD
+Ny konto
+; New Account
+;
+MSG_EDIT_TITLE_EDIT
+Redigér konto
+; Edit Account
+;
+MSG_LABEL_NAME
+Brugernavn:
+; User name:
+;
+MSG_LABEL_REALNAME
+Fulde navn:
+; Full name:
+;
+MSG_LABEL_UID
+Bruger-ID:
+; User ID:
+;
+MSG_LABEL_GROUP
+Gruppe:
+; Group:
+;
+MSG_LABEL_HOME
+Hjemmemappe:
+; Home directory:
+;
+MSG_LABEL_SHELL
+Shell:
+; Shell:
+;
+MSG_LABEL_PASSWORD
+Adgangskode:
+; Password:
+;
+MSG_LABEL_RETYPE
+Gentag adgangskode:
+; Retype password:
+;
+MSG_LABEL_OLDPASSWORD
+Nuværende adgangskode:
+; Current password:
+;
+MSG_LABEL_NEWPASSWORD
+Ny adgangskode:
+; New password:
+;
+MSG_EDIT_PASSWORD_HINT
+Lad adgangskoden være tom for at beholde den.
+; Leave the password empty to keep it.
+;
+MSG_PASSWORD_TITLE
+Sæt adgangskode
+; Set Password
+;
+MSG_MYPASSWORD_TITLE
+Skift din adgangskode
+; Change Your Password
+;
+MSG_REQ_OK
+_O.k.
+; _OK
+;
+MSG_REQ_YESNO
+_Slet|_Afbryd
+; _Delete|_Cancel
+;
+MSG_REQ_DELETE
+Slet kontoen '%s'?\n\nDens filer fjernes ikke.
+; Delete the account '%s'?\n\nIts files are not removed.
+;
+MSG_ERR_MISMATCH
+Adgangskoderne er ikke ens.
+; The passwords do not match.
+;
+MSG_ERR_NAME
+Indtast et brugernavn (ingen mellemrum, ':' eller '|').
+; Please enter a user name (no spaces, ':' or '|').
+;
+MSG_ERR_UID
+Indtast et bruger-ID mellem 1 og 65535.
+; Please enter a user ID between 1 and 65535.
+;
+MSG_ERR_RENAME_PASSWORD
+Denne konto har en adgangskode, som afhænger af brugernavnet:\nindtast en ny adgangskode for at omdøbe den.
+; This account has a password, which depends on the user name:\nplease enter a new password to rename it.
+;
+MSG_ERR_PERM
+Du har ikke tilladelse til dette, eller superbrugerens navn\nog nummer kan ikke ændres.
+; You are not allowed to do this, or the super user's name\nand number cannot be changed.
+;
+MSG_ERR_NOENT
+Den konto findes ikke.
+; There is no such account.
+;
+MSG_ERR_EXIST
+Brugernavnet eller bruger-ID'et er allerede i brug.
+; The user name or user ID is already used.
+;
+MSG_ERR_INVAL
+Et felt er ugyldigt, eller gruppen findes ikke.
+; A field is invalid, or the group does not exist.
+;
+MSG_ERR_IO
+Kontodatabasen kunne ikke skrives. Intet blev ændret.
+; The account database could not be written. Nothing was changed.
+;
+MSG_ERR_NOSYS
+Der er ingen kontodatabase at ændre.
+; There is no account database to change.
+;
+MSG_ERR_OTHER
+Ændringen mislykkedes (fejl %ld).
+; The change failed (error %ld).
+;
+MSG_ERR_PAM
+Adgangskoden blev ikke ændret: %s
+; The password was not changed: %s
+;
+MSG_DONE_PASSWORD
+Adgangskoden er blevet ændret.
+; The password has been changed.
+;
+MSG_ERR_NOMUI
+Accounts kræver muimaster.library.
+; Accounts needs muimaster.library.
+;
+MSG_ERR_NOUSERGROUP
+Accounts kræver usergroup.library 4.12.
+; Accounts needs usergroup.library 4.12.
+;
+MSG_PAGE_USERS
+Brugere
+; Users
+;
+MSG_PAGE_GROUPS
+Grupper
+; Groups
+;
+MSG_COL_GROUPNAME
+\33bGruppe
+; \33bGroup
+;
+MSG_COL_GID
+\33bGID
+; \33bGID
+;
+MSG_COL_MEMBERS
+\33bMedlemmer
+; \33bMembers
+;
+MSG_COL_DESCRIPTION
+\33bBeskrivelse
+; \33bDescription
+;
+MSG_BUTTON_GADD
+T_ilføj...
+; A_dd...
+;
+MSG_BUTTON_GEDIT
+R_edigér...
+; Ed_it...
+;
+MSG_BUTTON_GDELETE
+S_let...
+; Dele_te...
+;
+MSG_GROUP_TITLE_ADD
+Ny gruppe
+; New Group
+;
+MSG_GROUP_TITLE_EDIT
+Redigér gruppe
+; Edit Group
+;
+MSG_LABEL_GROUPNAME
+Gruppenavn:
+; Group name:
+;
+MSG_LABEL_GID
+Gruppe-ID:
+; Group ID:
+;
+MSG_LABEL_DESCRIPTION
+Beskrivelse:
+; Description:
+;
+MSG_LABEL_MEMBERS
+Medlemmer
+; Members
+;
+MSG_GROUP_PRIMARY
+Medlemmer via deres primære gruppe: %s
+; Members through their primary group: %s
+;
+MSG_REQ_DELETE_GROUP
+Slet gruppen '%s'?
+; Delete the group '%s'?
+;
+MSG_ERR_GROUPNAME
+Indtast et gruppenavn (ingen mellemrum, ':', ',' eller '|').
+; Please enter a group name (no spaces, ':', ',' or '|').
+;
+MSG_ERR_GID
+Indtast et gruppe-ID mellem 1 og 65535.
+; Please enter a group ID between 1 and 65535.
+;
+MSG_ERR_BUSY
+Denne gruppe er en brugers primære gruppe:\nden kan ikke slettes eller omnummereres.
+; This group is the primary group of a user:\nit cannot be deleted or renumbered.
+;
+MSG_ERR_GROUP_PERM
+Du har ikke tilladelse til dette, eller superbrugerens gruppe\nkan ikke omdøbes eller omnummereres.
+; You are not allowed to do this, or the super user's group\ncannot be renamed or renumbered.
+;
+MSG_ERR_GROUP_NOENT
+Den gruppe findes ikke, eller et medlem findes ikke.
+; There is no such group, or a member does not exist.
+;
+MSG_ERR_GROUP_EXIST
+Gruppenavnet eller gruppe-ID'et er allerede i brug.
+; The group name or group ID is already used.
+;
+MSG_ERR_GROUP_IO
+Gruppedatabasen kunne ikke skrives. Intet blev ændret.
+; The group database could not be written. Nothing was changed.
+;
+MSG_REQ_DEFAULTS
+Der er endnu ingen brugerkonti eller grupper defineret.\n\nOpret standardkontiene (root, nobody, services og\nguest) og -grupperne (admin, nobody, services, guests og\nusers)? Alle konti undtagen root er låst.
+; No user accounts or groups are defined yet.\n\nCreate the standard accounts (root, nobody, services and\nguest) and groups (admin, nobody, services, guests and\nusers)? All accounts but root are locked.
+;
+MSG_REQ_DEFAULTS_BUTTONS
+_Opret|_Ikke nu
+; _Create|_Not now
+;
+MSG_BUTTON_REMOVEPW
+Fjern adgangs_kode...
+; _Remove password...
+;
+MSG_PASSWORD_FOR
+Konto: %s
+; Account: %s
+;
+MSG_ERR_EMPTY_PASSWORD
+Indtast den nye adgangskode to gange.\nBrug "Fjern adgangskode" for at fjerne adgangskoden.
+; Please enter the new password twice.\nTo remove the password, use "Remove password".
+;
+MSG_REQ_REMOVE_PASSWORD
+Fjern adgangskoden for '%s'?\n\nAlle kan derefter logge ind som den uden en.\nEn låst konto låses op.
+; Remove the password of '%s'?\n\nAnybody can then log in as it without one.\nA locked account is unlocked.
+;
+MSG_REQ_REMOVE_BUTTONS
+_Fjern|_Afbryd
+; _Remove|_Cancel
+;
+MSG_DONE_REMOVED
+Adgangskoden er blevet fjernet.
+; The password has been removed.
+;
+MSG_READONLY_MEDIA
+Kontodatabasen ligger på et skrivebeskyttet medie: den kan ikke ændres.
+; The account database is on read-only media: it cannot be changed.
+;
+MSG_MENU_ACCOUNT
+Konto
+; Account
+;
+MSG_MENU_GROUP
+Gruppe
+; Group
+;
+MSG_MENU_EDIT
+Redigér...
+; Edit...
+;
+MSG_MENU_PASSWORD
+Sæt adgangskode...
+; Set password...
+;
+MSG_MENU_LOCK
+Lås
+; Lock
+;
+MSG_MENU_UNLOCK
+Lås op
+; Unlock
+;
+MSG_MENU_DELETE
+Slet...
+; Delete...
+;
+MSG_MENU_ADD_ACCOUNT
+Ny konto...
+; New account...
+;
+MSG_MENU_ADD_GROUP
+Ny gruppe...
+; New group...
+;

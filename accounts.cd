@@ -250,3 +250,51 @@ No user accounts or groups are defined yet.\n\nCreate the standard accounts (roo
 MSG_REQ_DEFAULTS_BUTTONS (//)
 _Create|_Not now
 ;
+MSG_BUTTON_REMOVEPW (//)
+_Remove password...
+;
+MSG_PASSWORD_FOR (//)
+Account: %s
+;
+MSG_ERR_EMPTY_PASSWORD (//)
+Please enter the new password twice.\nTo remove the password, use "Remove password".
+;
+MSG_REQ_REMOVE_PASSWORD (//)
+Remove the password of '%s'?\n\nAnybody can then log in as it without one.\nA locked account is unlocked.
+;
+MSG_REQ_REMOVE_BUTTONS (//)
+_Remove|_Cancel
+;
+MSG_DONE_REMOVED (//)
+The password has been removed.
+;
+MSG_READONLY_MEDIA (//)
+The account database is on read-only media: it cannot be changed.
+;
+MSG_MENU_ACCOUNT (//)
+Account
+;
+MSG_MENU_GROUP (//)
+Group
+;
+MSG_MENU_EDIT (//)
+Edit...
+;
+MSG_MENU_PASSWORD (//)
+Set password...
+;
+MSG_MENU_LOCK (//)
+Lock
+;
+MSG_MENU_UNLOCK (//)
+Unlock
+;
+MSG_MENU_DELETE (//)
+Delete...
+;
+MSG_MENU_ADD_ACCOUNT (//)
+New account...
+;
+MSG_MENU_ADD_GROUP (//)
+New group...
+;

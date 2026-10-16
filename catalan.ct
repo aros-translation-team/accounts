@@ -1,0 +1,400 @@
+## version $VER: Accounts.catalog 1.0 (16.10.2026)
+## language català
+## codeset 0
+;
+MSG_TITLE
+Accounts
+; Accounts
+;
+MSG_DESCRIPTION
+Gestionar els comptes d'usuari i els grups
+; Manage user accounts and groups
+;
+MSG_MODE_SECURITY
+Sistema multiusuari (security.library)
+; Multi-user system (security.library)
+;
+MSG_MODE_SINGLE
+Sistema d'un sol usuari (base de contrasenyes de xarxa)
+; Single-user system (network password database)
+;
+MSG_NOT_ADMIN
+Només root pot canviar altres comptes.
+; Only root can change other accounts.
+;
+MSG_COL_NAME
+\33bUsuari
+; \33bUser
+;
+MSG_COL_UID
+\33bUID
+; \33bUID
+;
+MSG_COL_GROUP
+\33bGrup
+; \33bGroup
+;
+MSG_COL_REALNAME
+\33bNom
+; \33bName
+;
+MSG_COL_HOME
+\33bInici
+; \33bHome
+;
+MSG_COL_STATUS
+\33bEstat
+; \33bStatus
+;
+MSG_STATUS_LOCKED
+Bloquejat
+; Locked
+;
+MSG_STATUS_NOPASSWORD
+Sense contrasenya
+; No password
+;
+MSG_BUTTON_ADD
+_Afegir...
+; _Add...
+;
+MSG_BUTTON_EDIT
+_Editar...
+; _Edit...
+;
+MSG_BUTTON_PASSWORD
+_Contrasenya...
+; _Password...
+;
+MSG_BUTTON_LOCK
+_Bloquejar
+; _Lock
+;
+MSG_BUTTON_UNLOCK
+_Desbloquejar
+; _Unlock
+;
+MSG_BUTTON_DELETE
+Esborra_r...
+; _Delete...
+;
+MSG_BUTTON_MYPASSWORD
+Canviar la _meva contrasenya...
+; Change _my password...
+;
+MSG_BUTTON_LOGIN
+Entrar com a roo_t...
+; Log in as _root...
+;
+MSG_BUTTON_REFRESH
+Actualit_zar
+; Re_fresh
+;
+MSG_BUTTON_SAVE
+_Desar
+; _Save
+;
+MSG_BUTTON_CANCEL
+_Cancel·lar
+; _Cancel
+;
+MSG_EDIT_TITLE_ADD
+Compte nou
+; New Account
+;
+MSG_EDIT_TITLE_EDIT
+Editar el compte
+; Edit Account
+;
+MSG_LABEL_NAME
+Nom d'usuari:
+; User name:
+;
+MSG_LABEL_REALNAME
+Nom complet:
+; Full name:
+;
+MSG_LABEL_UID
+ID d'usuari:
+; User ID:
+;
+MSG_LABEL_GROUP
+Grup:
+; Group:
+;
+MSG_LABEL_HOME
+Directori personal:
+; Home directory:
+;
+MSG_LABEL_SHELL
+Shell:
+; Shell:
+;
+MSG_LABEL_PASSWORD
+Contrasenya:
+; Password:
+;
+MSG_LABEL_RETYPE
+Repetir la contrasenya:
+; Retype password:
+;
+MSG_LABEL_OLDPASSWORD
+Contrasenya actual:
+; Current password:
+;
+MSG_LABEL_NEWPASSWORD
+Contrasenya nova:
+; New password:
+;
+MSG_EDIT_PASSWORD_HINT
+Deixeu la contrasenya buida per mantenir-la.
+; Leave the password empty to keep it.
+;
+MSG_PASSWORD_TITLE
+Establir la contrasenya
+; Set Password
+;
+MSG_MYPASSWORD_TITLE
+Canviar la vostra contrasenya
+; Change Your Password
+;
+MSG_REQ_OK
+_D'acord
+; _OK
+;
+MSG_REQ_YESNO
+_Esborrar|_Cancel·lar
+; _Delete|_Cancel
+;
+MSG_REQ_DELETE
+Esborrar el compte '%s'?\n\nEls seus fitxers no s'eliminen.
+; Delete the account '%s'?\n\nIts files are not removed.
+;
+MSG_ERR_MISMATCH
+Les contrasenyes no coincideixen.
+; The passwords do not match.
+;
+MSG_ERR_NAME
+Introduïu un nom d'usuari (sense espais, ':' ni '|').
+; Please enter a user name (no spaces, ':' or '|').
+;
+MSG_ERR_UID
+Introduïu un ID d'usuari entre 1 i 65535.
+; Please enter a user ID between 1 and 65535.
+;
+MSG_ERR_RENAME_PASSWORD
+Aquest compte té una contrasenya que depèn del nom d'usuari:\nintroduïu una contrasenya nova per reanomenar-lo.
+; This account has a password, which depends on the user name:\nplease enter a new password to rename it.
+;
+MSG_ERR_PERM
+No teniu permís per fer-ho, o el nom i el número\ndel superusuari no es poden canviar.
+; You are not allowed to do this, or the super user's name\nand number cannot be changed.
+;
+MSG_ERR_NOENT
+Aquest compte no existeix.
+; There is no such account.
+;
+MSG_ERR_EXIST
+El nom d'usuari o l'ID d'usuari ja està en ús.
+; The user name or user ID is already used.
+;
+MSG_ERR_INVAL
+Un camp no és vàlid, o el grup no existeix.
+; A field is invalid, or the group does not exist.
+;
+MSG_ERR_IO
+No s'ha pogut escriure la base de comptes. No s'ha canviat res.
+; The account database could not be written. Nothing was changed.
+;
+MSG_ERR_NOSYS
+No hi ha cap base de comptes per canviar.
+; There is no account database to change.
+;
+MSG_ERR_OTHER
+El canvi ha fallat (error %ld).
+; The change failed (error %ld).
+;
+MSG_ERR_PAM
+La contrasenya no s'ha canviat: %s
+; The password was not changed: %s
+;
+MSG_DONE_PASSWORD
+La contrasenya s'ha canviat.
+; The password has been changed.
+;
+MSG_ERR_NOMUI
+Accounts necessita muimaster.library.
+; Accounts needs muimaster.library.
+;
+MSG_ERR_NOUSERGROUP
+Accounts necessita usergroup.library 4.12.
+; Accounts needs usergroup.library 4.12.
+;
+MSG_PAGE_USERS
+Usuaris
+; Users
+;
+MSG_PAGE_GROUPS
+Grups
+; Groups
+;
+MSG_COL_GROUPNAME
+\33bGrup
+; \33bGroup
+;
+MSG_COL_GID
+\33bGID
+; \33bGID
+;
+MSG_COL_MEMBERS
+\33bMembres
+; \33bMembers
+;
+MSG_COL_DESCRIPTION
+\33bDescripció
+; \33bDescription
+;
+MSG_BUTTON_GADD
+A_fegir...
+; A_dd...
+;
+MSG_BUTTON_GEDIT
+E_ditar...
+; Ed_it...
+;
+MSG_BUTTON_GDELETE
+Es_borrar...
+; Dele_te...
+;
+MSG_GROUP_TITLE_ADD
+Grup nou
+; New Group
+;
+MSG_GROUP_TITLE_EDIT
+Editar el grup
+; Edit Group
+;
+MSG_LABEL_GROUPNAME
+Nom del grup:
+; Group name:
+;
+MSG_LABEL_GID
+ID del grup:
+; Group ID:
+;
+MSG_LABEL_DESCRIPTION
+Descripció:
+; Description:
+;
+MSG_LABEL_MEMBERS
+Membres
+; Members
+;
+MSG_GROUP_PRIMARY
+Membres a través del seu grup principal: %s
+; Members through their primary group: %s
+;
+MSG_REQ_DELETE_GROUP
+Esborrar el grup '%s'?
+; Delete the group '%s'?
+;
+MSG_ERR_GROUPNAME
+Introduïu un nom de grup (sense espais, ':', ',' ni '|').
+; Please enter a group name (no spaces, ':', ',' or '|').
+;
+MSG_ERR_GID
+Introduïu un ID de grup entre 1 i 65535.
+; Please enter a group ID between 1 and 65535.
+;
+MSG_ERR_BUSY
+Aquest grup és el grup principal d'un usuari:\nno es pot esborrar ni renumerar.
+; This group is the primary group of a user:\nit cannot be deleted or renumbered.
+;
+MSG_ERR_GROUP_PERM
+No teniu permís per fer-ho, o el grup del superusuari\nno es pot reanomenar ni renumerar.
+; You are not allowed to do this, or the super user's group\ncannot be renamed or renumbered.
+;
+MSG_ERR_GROUP_NOENT
+Aquest grup no existeix, o un membre no existeix.
+; There is no such group, or a member does not exist.
+;
+MSG_ERR_GROUP_EXIST
+El nom del grup o l'ID del grup ja està en ús.
+; The group name or group ID is already used.
+;
+MSG_ERR_GROUP_IO
+No s'ha pogut escriure la base de grups. No s'ha canviat res.
+; The group database could not be written. Nothing was changed.
+;
+MSG_REQ_DEFAULTS
+Encara no hi ha cap compte d'usuari ni cap grup definit.\n\nCrear els comptes estàndard (root, nobody, services i\nguest) i els grups (admin, nobody, services, guests i\nusers)? Tots els comptes excepte root queden bloquejats.
+; No user accounts or groups are defined yet.\n\nCreate the standard accounts (root, nobody, services and\nguest) and groups (admin, nobody, services, guests and\nusers)? All accounts but root are locked.
+;
+MSG_REQ_DEFAULTS_BUTTONS
+_Crear|_Ara no
+; _Create|_Not now
+;
+MSG_BUTTON_REMOVEPW
+Eliminar contrasen_ya...
+; _Remove password...
+;
+MSG_PASSWORD_FOR
+Compte: %s
+; Account: %s
+;
+MSG_ERR_EMPTY_PASSWORD
+Introduïu dues vegades la contrasenya nova.\nPer eliminar la contrasenya, useu «Eliminar contrasenya».
+; Please enter the new password twice.\nTo remove the password, use "Remove password".
+;
+MSG_REQ_REMOVE_PASSWORD
+Eliminar la contrasenya de '%s'?\n\nQualsevol hi podrà entrar sense contrasenya.\nUn compte bloquejat es desbloqueja.
+; Remove the password of '%s'?\n\nAnybody can then log in as it without one.\nA locked account is unlocked.
+;
+MSG_REQ_REMOVE_BUTTONS
+_Eliminar|_Cancel·lar
+; _Remove|_Cancel
+;
+MSG_DONE_REMOVED
+La contrasenya s'ha eliminat.
+; The password has been removed.
+;
+MSG_READONLY_MEDIA
+La base de comptes és en un suport de només lectura: no es pot canviar.
+; The account database is on read-only media: it cannot be changed.
+;
+MSG_MENU_ACCOUNT
+Compte
+; Account
+;
+MSG_MENU_GROUP
+Grup
+; Group
+;
+MSG_MENU_EDIT
+Editar...
+; Edit...
+;
+MSG_MENU_PASSWORD
+Establir la contrasenya...
+; Set password...
+;
+MSG_MENU_LOCK
+Bloquejar
+; Lock
+;
+MSG_MENU_UNLOCK
+Desbloquejar
+; Unlock
+;
+MSG_MENU_DELETE
+Esborrar...
+; Delete...
+;
+MSG_MENU_ADD_ACCOUNT
+Compte nou...
+; New account...
+;
+MSG_MENU_ADD_GROUP
+Grup nou...
+; New group...
+;
